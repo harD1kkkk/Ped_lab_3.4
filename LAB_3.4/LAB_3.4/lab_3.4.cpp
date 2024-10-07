@@ -10,7 +10,7 @@ int main()
 	cout << "y = "; cin >> y;
 	cout << "R = "; cin >> R;
 
-	bool A = (x >= 0 && y >= 0 && pow(x, 2) + pow(y, 2) <= pow(R, 2));
+	bool A = (x <= 0 && x>=-R && y >= 0 && y<=R && pow(x, 2) + pow(y, 2) >= pow(R, 2));
 	bool B = (x >= 0 && y <= 0 && pow(x, 2) + pow(y, 2) <= pow(R, 2));
 
 	if (A || B) {
